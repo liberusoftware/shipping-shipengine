@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "name": "shipping-shipengine",
+  "display_name": "Shipping ShipEngine Adapter",
+  "description": "ShipEngine multi-carrier shipping aggregator adapter extending liberusoftware/shipping-contracts.",
+  "version": "1.0.0",
+  "category": "adapter",
+  "provider": "Liberu\\Shipping\\ShipEngine\\ShipEngineShippingServiceProvider",
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/shipping-contracts": "^1.0"
+    }
+  },
+  "capabilities": [
+    "shipping.provider.shipengine"
+  ],
+  "default_enabled": true,
+  "features": [
+    "Live multi-carrier rate quoting",
+    "Label creation & voiding",
+    "Parcel tracking",
+    "Address validation",
+    "Webhook verification"
+  ]
+}
